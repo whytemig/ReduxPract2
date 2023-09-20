@@ -24,7 +24,7 @@ body{
     padding: 0px 40px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .logo{
@@ -47,4 +47,44 @@ body{
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
+}
+
+.movie-list, .show-list, h2{
+    margin:20px 0px;
+    color: #79B8F3;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.movie-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 15px;
+}
+.card-item{
+    background: #1a242f;
+    cursor: pointer;
+}
+
+.card-top{
+    height:300px;
+}
+
+.card-top img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-info{
+    color: #FFFFFF;
+}
+
+.card-info h4{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-bottom{
+    padding: 20px;
 }
