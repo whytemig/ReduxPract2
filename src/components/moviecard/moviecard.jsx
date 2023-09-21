@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const MovieCard = ({data}) => {
   return (
     <div className="card-item">
+      <Link to={`/movie/${data.imdbID}`} >
       <div className="card-inner">
         <div className="card-top">
           <img
@@ -17,6 +19,7 @@ const MovieCard = ({data}) => {
           </div>
         </div>
       </div>
+      </ Link>
     </div>
   );
 }
